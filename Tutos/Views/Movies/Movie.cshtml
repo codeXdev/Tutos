@@ -1,0 +1,15 @@
+﻿@model Tutos.Models.Movie
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Movies > Movie";
+}
+
+<h1>@Model.Name</h1>
+<ul>
+    @foreach (var name in Model.Actors)
+    {
+        <li>@name</li>
+    }
+</ul>
+<h3>@Model.ProductionCompany</h3>
+

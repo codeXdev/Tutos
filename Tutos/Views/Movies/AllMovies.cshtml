@@ -1,0 +1,12 @@
+﻿@model List<Tutos.Models.Movie>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Movies > All Movies";
+}
+
+<ul>
+    @foreach (var movie in Model)
+    {
+        <li><a href="/Movies/Movie/@movie.Name"  style="font-size:large;">@movie.Name</a></li>
+    }
+</ul>
